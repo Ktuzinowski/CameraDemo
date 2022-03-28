@@ -11,6 +11,7 @@ import AVFoundation
 
 class GoodCameraViewController: UIViewController {
     let cameraManager = CameraManager()
+    @IBOutlet weak var cameraView: UIView!
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     
     override func viewDidLoad() {
@@ -19,7 +20,7 @@ class GoodCameraViewController: UIViewController {
     }
     
     func initializeCamera() {
-        cameraManager.addPreviewLayerToView(self.view)
+        cameraManager.addPreviewLayerToView(cameraView)
     }
 
     @IBAction func takeAPicture(_ sender: UIButton) {
