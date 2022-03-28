@@ -1,0 +1,16 @@
+PODS:
+  - CameraManager (5.1.3)
+
+DEPENDENCIES:
+  - CameraManager (~> 5.1)
+
+SPEC REPOS:
+  trunk:
+    - CameraManager
+
+SPEC CHECKSUMS:
+  CameraManager: 73936a52093081ba5e44914e8120ab511360f5d4
+
+PODFILE CHECKSUM: 7446f76ebe5ec2bd551e94ac0417d8b78678f7d8
+
+COCOAPODS: 1.11.2
