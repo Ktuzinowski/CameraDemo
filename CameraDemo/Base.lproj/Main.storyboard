@@ -95,6 +95,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adL-Pc-yvo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="662"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5km-pz-wFD">
                                 <rect key="frame" x="68" y="750" width="278" height="62"/>
                                 <state key="normal" title="Button"/>
@@ -112,11 +116,19 @@
                         <viewLayoutGuide key="safeArea" id="jc7-l4-fz1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5km-pz-wFD" firstAttribute="top" secondItem="adL-Pc-yvo" secondAttribute="bottom" id="LhI-SD-TMd"/>
                             <constraint firstItem="5km-pz-wFD" firstAttribute="centerX" secondItem="9Ra-Iy-u6P" secondAttribute="centerX" id="RUv-Ul-7EX"/>
                             <constraint firstItem="jc7-l4-fz1" firstAttribute="bottom" secondItem="5km-pz-wFD" secondAttribute="bottom" constant="50" id="U0a-Jl-l0J"/>
+                            <constraint firstItem="adL-Pc-yvo" firstAttribute="leading" secondItem="jc7-l4-fz1" secondAttribute="leading" id="bo2-Vr-O3c"/>
+                            <constraint firstItem="adL-Pc-yvo" firstAttribute="top" secondItem="jc7-l4-fz1" secondAttribute="top" id="czo-VB-2Yi"/>
+                            <constraint firstItem="adL-Pc-yvo" firstAttribute="top" secondItem="jc7-l4-fz1" secondAttribute="top" id="jTp-sq-Jh6"/>
+                            <constraint firstItem="jc7-l4-fz1" firstAttribute="trailing" secondItem="adL-Pc-yvo" secondAttribute="trailing" id="l11-Vn-vZ0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GoodCamera" id="qpb-hO-2rv"/>
+                    <connections>
+                        <outlet property="cameraView" destination="adL-Pc-yvo" id="DgA-Y3-agD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsf-8g-iOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
